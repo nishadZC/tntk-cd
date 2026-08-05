@@ -32,7 +32,7 @@ spec:
                 name: api
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-2.amazonaws.com/prod/api:0043155c"
+          image: "368763425814.dkr.ecr.us-east-2.amazonaws.com/prod/api:993072f2"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -42,6 +42,10 @@ spec:
             httpGet:
               path: /api/metrics
               port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            failureThreshold: 3
+            timeoutSeconds: 1
           readinessProbe:
             httpGet:
               path: /api/metrics
