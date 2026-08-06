@@ -19,3 +19,4 @@ spec:
       command: ['wget']
       args: ['ui:80']
   restartPolicy: Never
+

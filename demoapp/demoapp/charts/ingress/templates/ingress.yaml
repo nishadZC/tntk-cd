@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: "demoapp.prod.devops.tentech.projects.apex-consulting.io"
+    - host: "tntk.paradisescubagoa.in"
       http:
         paths:
           - path: /api
@@ -30,3 +30,4 @@ spec:
                 name: ui
                 port:
                   number: 80
+

@@ -7,8 +7,8 @@ metadata:
   name: prod-lambda
   namespace: ack-lambda
   annotations:
-    services.k8s.aws/region: us-east-1
+    services.k8s.aws/region: us-east-2
 spec:
   functionName: prod-lambda
-  eventSourceARN: arn:aws:sqs:us-east-1:841483048185:prod-conversion-to-pdf--20240214220254529200000002.fifo
+  eventSourceARN: arn:aws:sqs:us-east-2:368763425814:prod-conversion-to-pdf--20260806111426577500000002.fifo
   batchSize: 10

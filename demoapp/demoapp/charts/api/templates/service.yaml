@@ -1,12 +1,12 @@
 ---
-# Source: demoapp/charts/ui/templates/service.yaml
+# Source: demoapp/charts/api/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: ui
+  name: api
   labels:
-    helm.sh/chart: ui-0.1.0
-    app.kubernetes.io/name: ui
+    helm.sh/chart: api-0.1.0
+    app.kubernetes.io/name: api
     app.kubernetes.io/instance: demoapp
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
@@ -18,5 +18,6 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: ui
+    app.kubernetes.io/name: api
     app.kubernetes.io/instance: demoapp
+
