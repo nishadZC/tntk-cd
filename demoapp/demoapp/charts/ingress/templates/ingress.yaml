@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: "tntk.paradisescubagoa.in"
+    - host: "demoapp.prod.tntk.paradisescubagoa.in"
       http:
         paths:
           - path: /api
