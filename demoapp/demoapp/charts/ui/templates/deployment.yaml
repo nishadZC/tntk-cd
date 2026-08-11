@@ -32,7 +32,7 @@ spec:
                 name: ui
           securityContext:
             {}
-          image: "368763425814.dkr.ecr.us-east-2.amazonaws.com/prod/ui:86d998de"
+          image: "368763425814.dkr.ecr.us-east-2.amazonaws.com/prod/ui:5df3d1e1"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

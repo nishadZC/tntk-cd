@@ -11,11 +11,11 @@ spec:
   name: prod-lambda
   packageType: Image
   code:
-    imageURI: 368763425814.dkr.ecr.us-east-2.amazonaws.com/prod/lambda:86d998de
+    imageURI: 368763425814.dkr.ecr.us-east-2.amazonaws.com/prod/lambda:5df3d1e1
   role: arn:aws:iam::368763425814:role/prod-lambda-execution-role
   description: function created by ACK lambda-controller
-  timeout: 30
-  memorySize: 256
+  timeout: 300
+  memorySize: 512
   environment:
     variables:
       S3_BUCKET_NAME: prod-app-output-files-368763425814
